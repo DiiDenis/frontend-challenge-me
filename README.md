@@ -1,6 +1,9 @@
 # Mercado Eletrônico — Frontend
 
-Projeto frontend de exemplo usando Vue 3 + Vite. Fornece uma estrutura simples de views, componentes reutilizáveis e serviços para comunicação com APIs.
+Projeto com finalidade de atender requisitos do teste técnico https://github.com/mercadoeletronico/frontend-challenge.
+Layout inspirado no figma disponibilizado, apenas acrescentado uma tela de boas vindas.
+
+Tecnologias principais: Vue 3 + Vite. Fornece uma estrutura simples de views, componentes reutilizáveis e serviços para comunicação com APIs.
 
 ## Sumário
 
@@ -135,7 +138,5 @@ Dicas rápidas
 - O projeto usa `@vue/vue3-jest` para transformar arquivos `.vue` e `@vue/test-utils` para montar componentes.
 - Se o seu teste importa imagens ou arquivos CSS, há mapeamentos no `jest.config.cjs` para mocks (ex.: `tests/__mocks__/fileMock.js` e `identity-obj-proxy`) para evitar erros de importação.
 - Para esperar promises pendentes em testes assíncronos prefira `flush-promises` (pacote `flush-promises`) ou use um util `delay()` e `await nextTick()` para garantir que o DOM foi atualizado antes das asserções.
-
-Silenciar warnings de deprecação (opcional)
 
 ```
