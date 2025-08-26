@@ -1,0 +1,30 @@
+$primary: #0a0a93;
+$text: #48494e;
+$light: #fff;
+$disabled: #a1a4b3;
+$error: #ff5252;
+$success: #4caf50;
+
+$colors: (
+  "light": $light,
+  "primary": $primary,
+);
+
+@each $colorname, $color in $colors {
+  .#{$colorname}-ghost {
+    background-color: rgba($color, 0);
+    color: #{$color};
+    border: 1px solid $color;
+    &:hover {
+      background: rgba($color, 0.05);
+    }
+  }
+  .#{$colorname}-filled {
+    background-color: #{$color};
+    color: $light;
+    border: 1px solid #{$color};
+    &:hover {
+      background: rgba($color, 0.8);
+    }
+  }
+}
