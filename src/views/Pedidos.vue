@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="page_container">
-      <div class="page_title">Lista de Pedidos</div>
+      <div class="page_title">Order details</div>
       <div class="page_header">
         <div class="page_header-highlight">
           <span class="page_header-highlight-label">Pre-order</span>
@@ -130,7 +130,7 @@ onMounted(async () => {
     height: calc(100% - 30px);
   }
   &_title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: $text;
   }
