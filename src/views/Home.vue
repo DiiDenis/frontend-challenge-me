@@ -40,6 +40,9 @@ function acessarPedidos() {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 
   &_container {
     width: 100%;
@@ -53,7 +56,6 @@ function acessarPedidos() {
     max-width: 569px;
     padding: 50px 20px 50px;
     border-radius: 30px;
-
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
   }
 
@@ -69,6 +71,10 @@ function acessarPedidos() {
     font-size: 32px;
     font-weight: 700;
     margin-top: 20px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   &_subtitle {
