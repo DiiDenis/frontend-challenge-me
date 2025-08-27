@@ -68,9 +68,11 @@
             { 'page_accordion-content--open': isOpen },
           ]"
         >
-          <Card :dados="pedido?.addresses[0]" />
-          <Card :dados="pedido?.addresses[1]" />
-          <Card :dados="pedido?.addresses[2]" />
+          <Card
+            v-for="(address, index) in pedido?.addresses"
+            :key="index"
+            :dados="address"
+          />
         </div>
       </div>
     </div>
