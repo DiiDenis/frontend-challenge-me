@@ -118,7 +118,6 @@ onMounted(async () => {
   text-align: left;
   background: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
   box-sizing: border-box;
 
